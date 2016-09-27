@@ -1,0 +1,175 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+<link href="myCustomCSS/myStyleSheet.css" rel="stylesheet" type="text/css">
+<script src="js/jquery-1.11.2.min.js" type="text/javascript"></script>
+<script src="myCustomScripts/myJS.js" type="text/javascript"></script>
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Processing John O' Dwyer</title>
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+<div class="container-fluid" id="mainContainer">
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#inverseNavbar1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+  <h1 class="myName"><a href="index.html">John O' Dwyer</a></h1>
+  <p class="tagline">Interactive Media</p>
+  
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="inverseNavbar1">
+      <ul class="nav navbar-nav">
+        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">AUTUMN<span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="photography.html">PHOTOGRAPHY</a></li>
+            <li><a href="video.html">VIDEO PRODUCTION</a></li>
+            <li><a href="audio.html">AUDIO PRODUCTION</a></li>
+            <li class="divider"></li>
+
+          
+          </ul>
+        </li>
+        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">SPRING<span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="html5.html">FLASH/HTML5</a></li>
+            <li><a href="pureData.html">PURE DATA</a></li>
+            <li><a href="arduino.html">ARDUINO</a></li>
+            <li><a href="processing.html">PROCESSING</a></li>
+            <li><a href="prototyping.html">PROTOTYPING</a></li>
+            <li class="divider"></li>
+
+          </ul>
+        </li>
+        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">DISERTATION<span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="html5.html">FLASH/HTML5</a></li>
+            <li><a href="pureData.html">PURE DATA</a></li>
+            <li><a href="arduino.html">ARDUINO</a></li>
+            <li><a href="processing.html">PROCESSING</a></li>
+            <li><a href="prototyping.html">PROTOTYPING</a></li>
+            <li class="divider"></li>
+
+          </ul>
+        </li>
+      </ul>
+<ul class="nav navbar-nav navbar-right">
+        <li></li>
+        <li class="dropdown">
+<ul class="dropdown-menu" role="menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <!-- /.navbar-collapse -->
+  </div>
+  <!-- /.container-fluid -->
+</nav> <!--My Nav Bar Bootstrapped! Contained in this collapse-->
+
+<div class="container-fluid">
+	<div class="row">
+   	  <div class="col-sm-12" id="lefthandColHome">
+        	<h3>Processing/Arduino</h3>
+             <p>We were required to explore creative coding using the Processing IDE. I decided that I would like to incorporate some interactivity into my project. Interactivity, in this case, is provided by a potentiometer connected to an Arduino UNO and the mouse. The mouse was used for convenience but future development of this project could include, hardware buttons or perhaps a Microsoft Kinect sensor/camera. This would look great projected on a large area with the capability of multiple users interacting together through gesture. Download a copy of the code <a href="zippedCode/processingCode.zip">here</a>.</p>
+            <iframe width="90%" height="500" src="https://www.youtube.com/embed/wXYMZSv2Fpw" frameborder="0" allowfullscreen></iframe>
+   <p>The code for this project is a customisation of a random line drawing project found on <a href="http://www.openprocessing.org/sketch/109809">openprocessing.org</a> with some code written by myself that polls the serial port of the computer and takes the data sent to influence the direction of the lines being drawn to the processing java applet window. The original author is  credited in the comment section of the code, which can be downloaded <a href="zippedCode/processingCode.zip">here</a>.</p>
+        </div>
+     
+    </div>
+
+</div>
+
+<div class="row">
+  <div class="col-md-12" id="breakerColumn"></div><!-- breaker column -->
+</div>
+
+<div class="container-fluid" id="aboutMeContainer">
+<div class="row">
+<div class="col-sm-6" id="lefthandColHome2">
+	<h4 id="aboutMe">Processing</h4>
+    <p id="aboutMeP">Upon launching, the code in this application draws a line with random X and Y coordinates (within the screen size) to the applet window. A random colour is chosen also. When the mouse button is clicked, a new line is drawn with the starting coordinates relating to the X and Y position of the mouse where it is clicked. </p>
+    <p id="aboutMeP">The lines have a random direction but this can be influenced by turning the potentiometer one way or the other. Both the X and the Y direction are affected by the interaction. Download a ZIP of the <a href="zippedCode/processingCode.zip">code</a>.</p>
+    <p id="aboutMeP">The alpha channel of the HSL colour mode is also affected by the pot. The higher the pot value, the more alpha is introduced, giving the coloured lines a varying transparency as the traverse the screen.</p>
+    </div>
+    
+    <div class="col-sm-6" id="righthandColHome2">
+    <h4 id="aboutMe">Serial Communication</h4>
+    <p id="aboutMeP">The arduino is programmed to send data to the serial port on the computer and in processing some <a href="zippedCode/processingCode.zip"> code</a> is written that polls the serial port looking for data. The code is programmed to look for a newline character. </p>
+    <p id="aboutMeP">Once it receives the newline character, it understands that this is the end of the data stream and the value is passed to the processing sketch. </p> <p id="aboutMeP">In the video above, the Processing window shows the data values streaming and changing as the potentiometer is turned.</p>
+    	</div>
+	</div>
+</div>
+
+<div class="container-fluid">
+	<div class="col-sm-12">
+       <p class="videoPara">The image below shows a make shift 'handle' attached to the potentiometer. This made it easier to turn and visulaise where it is positioned in the range.</p>
+       		<img src="myImages/wrenchKnob.JPG" width = "50%" alt = "wrench dial"/>
+       
+
+
+<div class="container-fluid">
+	<div class="col-sm-12">
+       <p class="videoPara">I would have liked to have spent more time experimenting with Processing and the Arduino combined and 'talking' to eachother. The plan is to revisit this assignment at a later date and develop it as an installation.</p>
+        <p class="videoPara">I would like to add some other hardware devices like buttons and the Kinect and experiment with implementing gestural control to the system. Grab a ZIP of the code <a href="zippedCode/processingCode.zip">here</a></p> 
+
+
+<div class="container-fluid panel-footer">
+  <footer class="myFooter" id="myFooterID">
+  	<div class="row">
+      <div class="col-sm-4 footerColumns">
+      <h3 class="footerHeadings">Tools</h3>
+      	<ul class="footerList">
+        	<li><a href="http://www.adobe.com/ie/products/dreamweaver.html" class="footerLinks">Dreamweaver</a></li>
+            <li><a href="http://getbootstrap.com/" class="footerLinks">Bootstrap</a></li>
+            <li><a href="http://galleria.io/" class="footerLinks">Galleria</a></li>
+            <li><a href="http://www.w3schools.com/html/html_responsive.asp" class="footerlinks">Responsive</a></li>
+            <li><a href="https://jquery.com/" class="footerlinks">Jquery</a></li>
+        </ul>
+      </div>
+      <div class="col-sm-4 footerColumns">
+      <h3 class="footerHeadings">Education</h3>
+      	<ul class="footerList">
+        	<li><a href="http://www.lsadgraduates.ie/john-o-dwyer" class="footerLinks">lSAD</a></li>
+            <li><a href="index.html" class="footerLinks">UL</a></li>
+            <li><a href="http://johngodwyer.com/" class="footerLinks">.COM</a></li>
+            <li><a href="https://www.behance.net/JohnnyOD" class="footerlinks">BeHancE</a></li>
+            <li><a href="https://vimeo.com/user13305554/videos" class="footerlinks">VIMEO</a></li>
+        </ul>
+      </div>
+      <div class="col-sm-4 footerColumns">
+      <h3 class="footerHeadings">Inspiration</h3>
+      	<ul class="footerList">
+        	<li><a href="#" class="footerLinks">Smashing</a></li>
+            <li><a href="http://www.creativebloq.com/" class="footerLinks">Creative</a></li>
+            <li><a href="https://responsivedesign.is/" class="footerLinks">Responsive</a></li>
+            <li><a href="http://designmodo.com/" class="footerlinks">DesignModo</a></li>
+            <li><a href="http://www.hongkiat.com/blog/" class="footerlinks">Hongkiat</a></li>
+        </ul>
+      </div>
+      <div class="container">
+         <p class="copyrightFooter">copyright <a href="index.html">John O' Dwyer</a> 2015/2016</p>
+     </div>
+
+    </div>
+</footer>
+</div><!-- end my footer content -->
+</div>
+<script src="js/bootstrap.js" type="text/javascript"></script>
+</body>
+</html>

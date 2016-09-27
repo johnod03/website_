@@ -1,0 +1,179 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+<link href="myCustomCSS/myStyleSheet.css" rel="stylesheet" type="text/css">
+<script src="js/jquery-1.11.2.min.js" type="text/javascript"></script>
+<script src="myCustomScripts/myJS.js" type="text/javascript"></script>
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ARDUINO John O' Dwyer</title>
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+<div class="container-fluid" id="mainContainer">
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#inverseNavbar1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+  <h1 class="myName"><a href="index.html">John O' Dwyer</a></h1>
+  <p class="tagline">Interactive Media</p>
+  
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="inverseNavbar1">
+      <ul class="nav navbar-nav">
+        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">AUTUMN<span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="photography.html">PHOTOGRAPHY</a></li>
+            <li><a href="video.html">VIDEO PRODUCTION</a></li>
+            <li><a href="audio.html">AUDIO PRODUCTION</a></li>
+            <li class="divider"></li>
+
+          
+          </ul>
+        </li>
+        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">SPRING<span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="html5.html">FLASH/HTML5</a></li>
+            <li><a href="pureData.html">PURE DATA</a></li>
+            <li><a href="arduino.html">ARDUINO</a></li>
+            <li><a href="processing.html">PROCESSING</a></li>
+            <li><a href="prototyping.html">PROTOTYPING</a></li>
+            <li class="divider"></li>
+
+          </ul>
+        </li>
+        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">DISERTATION<span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="disertation.html">INITIAL PROPOSAL</a></li>
+            <li><a href="#">PLANNING</a></li>
+            <li><a href="#">FINAL THESIS</a></li>
+            <li class="divider"></li>
+
+          </ul>
+        </li>
+      </ul>
+<ul class="nav navbar-nav navbar-right">
+        <li></li>
+        <li class="dropdown">
+<ul class="dropdown-menu" role="menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <!-- /.navbar-collapse -->
+  </div>
+  <!-- /.container-fluid -->
+</nav> <!--My Nav Bar Bootstrapped! Contained in this collapse-->
+
+<div class="container-fluid">
+	<div class="row">
+   	  <div class="col-sm-12" id="lefthandColHome">
+        	<h3>Arduino</h3>
+            <p>For the Arduino component of the project workshops we wer encouraged to experiment with the device and write our own Arduino C <a href="zippedCode/LedsAndPot.zip"> code </a>. The range of sensors and output devices is vast and we were given a limited selection to work with. I decided to work with the sensors that I had been given and incorporate some LED's into my device.</p>
+            <img src="myImages/topViewLandscape.JPG" alt="arduino" width="70%" />
+   
+   <p>I created a very simple circuit that took input from a potentiometer and controlled the state of 3 LEDs or light emitting diodes. By turning the pot from its lowest point to its highest, the LEDs would turn on in sequence. The same occurred in the opposite direction, the LEDs would sequentially turn off according to the direction/range of the potentiometer. Links are provided to download a ZIP file containing all <a href="zippedCode/LedsAndPot.zip">code</a> used in this project. </p>
+        </div>
+     
+    </div>
+
+</div>
+
+<div class="row">
+  <div class="col-md-12" id="breakerColumn"></div><!-- breaker column -->
+</div>
+
+<div class="container-fluid" id="aboutMeContainer">
+<div class="row">
+<div class="col-sm-6" id="lefthandColHome2">
+	<h4 id="aboutMe">Arduino</h4>
+    <p id ="aboutMeP">It was neccessary to use a resistor on each of the LEDs in order to regulate the voltage and protect both the Arduino  and the LEDs.</p>
+    <p id="aboutMeP">I also used a breadboard to carry out the basic wiring of the circuit.</p>
+    
+    </div>
+    
+    <div class="col-sm-6" id="righthandColHome2">
+    <h4 id="aboutMe">The Code</h4>
+    <p id="aboutMeP">The code used to achieve this basic microcontroller device is included in <a href="zippedCode/LedsAndPot.zip">this</a> zipped file and does not include any external libraries.</p>
+    <p id="aboutMeP">A mapping function is used to scale the ranges generated by the potentiometer from 0 - 1023 to 0 - 100. Each LEDs state corresponds to a predefined range i.e. 1 -33 = LED 1 ON, 33 - 66 = LED 2 ON et.c</p>
+    	</div>
+	</div>
+</div>
+
+<div class="container-fluid">
+	<div class="col-sm-12">
+           <p>Again, the code used in this project can be retrieved by following this <a href="zippedCode/LedsAndPot.zip">link</a> where the ZIP file can be downloaded.</p>
+
+         <img src="myImages/topView.JPG"  width="70%" alt="arduino 2" />
+         
+                <p>A top down view of my circuit showing all LEDs turned on.</p>
+
+     </div>
+</div>
+
+<div class="container-fluid">
+	<div class="col-sm-12">
+       <p>The video shows the device in action. It captures the potentiometer being turned and the corresponding LEDs switching on and off accordingly.</p>
+       <iframe width="70%" height="500" src="https://www.youtube.com/embed/tWvasGewQRE" frameborder="0" allowfullscreen></iframe>
+       <p>Download a ZIP of the code used in this project <a href="zippedCode/LedsAndPot.zip">here</a>.</p>
+       </div>
+
+<div class="container-fluid panel-footer">
+  <footer class="myFooter" id="myFooterID">
+  	<div class="row">
+      <div class="col-sm-4 footerColumns">
+      <h3 class="footerHeadings">Tools</h3>
+      	<ul class="footerList">
+        	<li><a href="http://www.adobe.com/ie/products/dreamweaver.html" class="footerLinks">Dreamweaver</a></li>
+            <li><a href="http://getbootstrap.com/" class="footerLinks">Bootstrap</a></li>
+            <li><a href="http://galleria.io/" class="footerLinks">Galleria</a></li>
+            <li><a href="http://www.w3schools.com/html/html_responsive.asp" class="footerlinks">Responsive</a></li>
+            <li><a href="https://jquery.com/" class="footerlinks">Jquery</a></li>
+        </ul>
+      </div>
+      <div class="col-sm-4 footerColumns">
+      <h3 class="footerHeadings">Education</h3>
+      	<ul class="footerList">
+        	<li><a href="http://www.lsadgraduates.ie/john-o-dwyer" class="footerLinks">lSAD</a></li>
+            <li><a href="index.html" class="footerLinks">UL</a></li>
+            <li><a href="http://johngodwyer.com/" class="footerLinks">.COM</a></li>
+            <li><a href="https://www.behance.net/JohnnyOD" class="footerlinks">BeHancE</a></li>
+            <li><a href="https://vimeo.com/user13305554/videos" class="footerlinks">VIMEO</a></li>
+        </ul>
+      </div>
+      <div class="col-sm-4 footerColumns">
+      <h3 class="footerHeadings">Inspiration</h3>
+      	<ul class="footerList">
+        	<li><a href="#" class="footerLinks">Smashing</a></li>
+            <li><a href="http://www.creativebloq.com/" class="footerLinks">Creative</a></li>
+            <li><a href="https://responsivedesign.is/" class="footerLinks">Responsive</a></li>
+            <li><a href="http://designmodo.com/" class="footerlinks">DesignModo</a></li>
+            <li><a href="http://www.hongkiat.com/blog/" class="footerlinks">Hongkiat</a></li>
+        </ul>
+      </div>
+      <div class="container">
+         <p class="copyrightFooter">copyright <a href="index.html">John O' Dwyer</a> 2015/2016</p>
+     </div>
+
+    </div>
+</footer>
+</div><!-- end my footer content -->
+</div>
+<script src="js/bootstrap.js" type="text/javascript"></script>
+</body>
+</html>

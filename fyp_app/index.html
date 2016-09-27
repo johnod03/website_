@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!-- iOS-specifc metas -->
+    <meta name="apple-touch-fullscreen" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>Sonifying Surveillance Project</title>
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="pubnub.min.js"></script>
+</head>
+
+<body>
+    <div id="skip-link">
+        <a href="#main-content" class="element-invisible element-focusable">Skip to main content</a>
+    </div>
+    <div class="pageWrapper">
+    </div>
+    <div id="content" class="content pageContent">
+        <div id="messages">
+            <div class="messagesWrapper">
+            </div>
+        </div>
+        <div class="region region-content">
+            <div id="block-system-main" class="block block-system">
+                <div class="content">
+                    <div id="node-32" class="node node-page clearfix">
+                        <div class="content">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="jmpubnubWrapper">
+            <div class="mainCont">
+                <div class="jmPubNubPublish">
+                    <h1>Type and send Your Subtitle</h1>
+                    <form id="publishForm" action="" onsubmit="sendToMax(); return false;">
+                        <div id="fieldset">
+                            <!--  <input id="thisWillGoToMax" name="thisWillGoToMax" cols="40" maxlength="15" rows="1"> -->
+                            <!-- Use maxlength if you want to restrict the number of characters that can be entered into the text fiels -->
+                            <input id="thisWillGoToMax" name="thisWillGoToMax" cols="40" rows="1"></input>
+                        </div>
+                        <input type="button" value="Send" id="sendToMax">
+                    </form>
+                    <div id="yes">
+                        <div id="no">
+                            Your browser does not support Device Orientation and Motion API. Try this sample with iPhone, iPod or iPad with iOS 4.2+.
+                        </div>
+                    </div>
+                                    <div id="projectTitle">
+                    <h2>sonifying surveillance project</h2>
+                </div>
+                </div>
+                <div id="errWrapper">
+                    <span id="errorMessage">Connection Lost. Will auto-reconnect when Online.</span>
+                </div>
+
+            </div>
+        </div>
+        <!--[if lt IE 9]>
+</div>
+<![endif]-->
+        <script src="myPubnub.js"></script>
+</body>
+
+</html>

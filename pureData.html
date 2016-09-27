@@ -1,0 +1,304 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+<link href="myCustomCSS/myStyleSheet.css" rel="stylesheet" type="text/css">
+ <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+<script src="galleria /galleria-1.4.2.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/jquery.beforeafter-1.4.min.js"></script>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PURE DATA John O' Dwyer</title>
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+</head>
+
+<body>
+<div class="container-fluid" id="mainContainer">
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid headerNavContainer">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#inverseNavbar1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+<h1 class="myName"><a href="index.html">John O' Dwyer</a></h1>
+<p class="tagline">Interactive Media</p>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="inverseNavbar1">
+    
+      <ul class="nav navbar-nav">
+        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">AUTUMN<span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="photography.html">PHOTOGRAPHY</a></li>
+            <li><a href="video.html">VIDEO PRODUCTION</a></li>
+            <li><a href="audio.html">AUDIO PRODUCTION</a></li>
+            <li class="divider"></li>
+
+         
+          </ul>
+        </li>
+        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">SPRING<span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="html5.html">FLASH/HTML5</a></li>
+            <li><a href="pureData.html">PURE DATA</a></li>
+            <li><a href="arduino.html">ARDUINO</a></li>
+            <li><a href="processing.html">PROCESSING</a></li>
+            <li><a href="prototyping.html">PROTOTYPING</a></li>
+            <li class="divider"></li>
+
+          </ul>
+        </li>
+        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">DISERTATION<span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="disertation.html">INITIAL PROPOSAL</a></li>
+            <li><a href="#">PLANNING</a></li>
+            <li><a href="#">FINAL THESIS</a></li>
+            <li class="divider"></li>
+         
+          </ul>
+        </li>
+      </ul>
+<ul class="nav navbar-nav navbar-right">
+        <li></li>
+        <li class="dropdown">
+<ul class="dropdown-menu" role="menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <!-- /.navbar-collapse -->
+  </div>
+  <!-- /.container-fluid -->
+</nav> <!--My Nav Bar Bootstrapped! Contained in this collapse-->
+
+<div class="container-fluid">
+	<div class="col-sm-12">
+	  <p id="photoPara">Pure data truely is a phenomenal software package. It's hard to believe that such a powerful package is completely free. A true testament to the open source movement. For this workshop component, we were encouraged to experiement with PD and see what we could come up with. The possibilities are endless. Although PD is originally designed to route and control audio and number data, it is possible to take it as far as the imagination will allow, especially with the use of GEM, the graphics side of PD. This <a href="zippedCode/myPD.zip"> link</a> contains a zipped folder of all PD code/patches used in my projects. Note, these are still works in progress and should provide some explaination as to how I used PD....</p>
+	</div>
+</div>
+
+<div class="container-fluid galleriaHolder">
+  <div class="jumbotron galleryContainer">
+    <h1 class="galleryHeading">PD Sample Sequencer</h1>
+      
+      <iframe src="https://player.vimeo.com/video/166348513" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<p><a href="https://vimeo.com/166348513">Synth Demo Static Cam</a> from <a href="https://vimeo.com/user13305554">John O&#039; Dwyer</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+
+
+<div class="container-fluid">
+	<div class="col-sm-12">
+	  <p id="photoPara">The video above is a capture of a test performance using an Arduino and two sensors to control various parameters of my drone synth patch. I am using a flex sensor and potentiometer in this case. Check this <a href="zippedCode/myPD.zip"> link</a> to download a ZIP file containing the PD patches required to get the synth up and running.</p>
+	</div>
+</div>
+
+
+ 	<div class="col-sm-6">
+    	<h2>Frame Differencing</h2>
+        <p class="photoDesc">An experiment with frame differencing. I wanted to explore this technique as it is something I could use in my dissertation project when it comes to sonifying video data. The original movie is converted from colour to greyscale in order to make the analysis less complex.</p>
+    	<div class="slideImgContainer" id="swapContainer">
+ 		<iframe src="https://player.vimeo.com/video/166345159" width="500" height="266" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<p><a href="https://vimeo.com/166345159">frameDifferencing</a> from <a href="https://vimeo.com/user13305554">John O&#039; Dwyer</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+		</div>
+               <p class="slidePhotoExplain">The original movie was shot on an iPhone 6s and is of a loose telegraph wire swinging in a mountain breeze.</p>
+ 	</div>
+    
+   <div class="col-sm-6">
+        <h2>Noise Drone</h2>
+               <p class="photoDesc">I have found myself extremely interested in the creation of drones using computer music techniques. Again, These could play a part in my dissertation project so I am trying to use Mikael's workshop components to explore methods that will inform the final project somehow.</p>
+        <div class="slideImgContainer" id="swapContainer2">
+ 		<iframe src="https://player.vimeo.com/video/166300297" width="500" height="266" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="https://vimeo.com/166300297">noiseDrone</a> from <a href="https://vimeo.com/user13305554">John O&#039; Dwyer</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+		</div>
+               <p class="slidePhotoExplain">This noise drone patch uses a number of oscillators that are modulated over and over to create the drone sounds. A noise generator is used to add extra interest to the texture.</p>
+ 	</div>
+    
+    
+     	<div class="col-sm-6">
+    	<h2>Synth Demo</h2>
+        <p class="photoDesc">A demo of my drone synth in action. Here, I used Pduino combined with Firmata to allow interactivity with the patch. A flex sensor and a potentiometer are connected to the Arduino and they are mapped using a one-to-many stratagey. Multiple parameters are affected by a single controller.</p>
+                <div class="slideImgContainer" id="swapContainer3">
+
+    	<iframe src="https://player.vimeo.com/video/166345882" width="500" height="266" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<p><a href="https://vimeo.com/166345882">synthDemoSound</a> from <a href="https://vimeo.com/user13305554">John O&#039; Dwyer</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+ 		 <p class="slidePhotoExplain">In the video above I tried to capture the interactions occuring and demonstrate the resulting parameter changes in PD.</p>
+		</div>
+              
+ 	</div>
+    
+   <div class="col-sm-6">
+        <h2>PD Sample Sequencer</h2>
+               <p class="photoDesc">Pduino/Firmata allow for quick set up, once the relevant libraries are in place and they lend themselves to rapid prototyping. The downside of this approach is that the firmware on the Arduino chip is overwritten, making it difficult to easily write custom Arduino C code. </p>
+        <div class="slideImgContainer" id="swapContainer4">
+ 		
+          <iframe src="https://player.vimeo.com/video/166300296" width="500" height="266" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="https://vimeo.com/166300296">kickSnareHats</a> from <a href="https://vimeo.com/user13305554">John O&#039; Dwyer</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+		</div>
+               <p class="slidePhotoExplain"> A basic sample sequencer. All audio samples were recorded using a ZOOM H6 mobile audio recorder.</p>
+ 	</div>
+    
+    
+    <div class="col-sm-6">
+    	<h2>GEM Demo</h2>
+        <p class="photoDesc">Screeen capture of GEM patch running alongside the synth patch with common mappings.</p>
+    	<div  class="slideImgContainer" id="swapContainer5">
+ 		<iframe src="https://player.vimeo.com/video/166351846" width="500" height="266" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<p><a href="https://vimeo.com/166351846">GEM with Sound</a> from <a href="https://vimeo.com/user13305554">John O&#039; Dwyer</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+               <p class="slidePhotoExplain">The GEM patch allows the creation and control of graphics. Control is again provided by interacting with the hardware sensors and Arduino. The pot moves the shapes in opposite directions and the flex is controlling the colour of the graphic elements.</p>
+ 	</div>
+    </div>
+    
+    
+   <div class="col-sm-6">
+        <h2>Flex Sensor/Arduino Circuit</h2>
+               <p class="photoDesc">Close up of Arduino and flex sensor wiring. The flex is mapped using one-to-many mappings. </p>
+        <div class="slideImgContainer" id="swapContainer6">
+ 		<img src="myImages/arduinoFlexStill.JPG" width="500" height="266" alt="arduino still"/>
+               <p class="slidePhotoExplain">As well as controlling the roomsize parameter of the freeverb~ object, the flex sensor also controls the RGB values of both the geometric shapes and the particle system. This provides an interesting multi-modal interactive application where audio and video components are affected by a single hardware controller. </p>
+    </div>
+    </div>
+   <div class="container-fluid">
+	<div class="col-sm-12">
+       <p id="photoPara">Below are some stills and screenshots of coding examples and renderings from the GEM window. Some details are given as to how the PD patches work and the screenshots help to illustrate the intentions. </p>
+     </div>
+</div>
+
+    
+    	<div class="col-sm-6">
+    	<h2>Potentiometer</h2>
+        <p class="photoDesc">A close up of the potentiometer. The pot was mounted upon a cigar box for another project and this was used here once again.</p>
+    	<div class="slideImgContainer" id="swapContainer7">
+ 		<img src="myImages/potStill.JPG" width="500" height="300" alt="potentiometer still"/>
+
+               <p class="slidePhotoExplain">The values from the potentiometer range from 0 - 1023 when they are sent to the serial port. They are then scaled using PD's autoscale object to 0 - 100. Once they are available in PD, it is possible to scale them to any range.</p>
+ 	</div>
+    </div>
+    
+   <div class="col-sm-6">
+        <h2>GEM Patch</h2>
+               <p class="photoDesc">The GEM patch draws a circle, a square and a particl system to the GEM window. Each of theses elements have a number of controllable parameters. In this case, the colour, scale and X position of the square and circle are mapped to the pot.</p>
+        <div class="slideImgContainer" id="swapContainer8">
+ 		<img src="myImages/GEM_code.png" width="500" height="300" alt="arduino still"/>
+
+               <p class="slidePhotoExplain">In the screenshot it is possible to see the mappings and the scale object taking place.</p>
+ 	</div>
+    </div>
+    
+    <div class="container-fluid">
+	<div class="col-sm-12">
+       <p id="photoPara">“I don't study music, I make tools for making music,”
+<cite>― Miller Puckette, CIRMMT - 2012.</cite> </p>
+     </div>
+</div>
+
+
+  	<div class="col-sm-6">
+    	<h2>Variable delay</h2>
+        <p class="photoDesc">The patch snippet in the image below shows a system for automating the delay time in a variable delay system.</p>
+    	<div class="slideImgContainer" id="swapContainer9">
+ 		 		<img src="myImages/delayAutomation.png" width="340" height="500" alt="arduino still"/>
+
+               <p class="slidePhotoExplain">The values of the delay time are set to change according to the metro time (2 - 2.5 seconds , left - right channels respectively) and a random delay time between 100 - 1100 is generated and sent to the variable delay.</p>
+ 	</div>
+    </div>
+   <div class="col-sm-6">
+        <h2>Freeverb~</h2>
+               <p class="photoDesc">The freeverb~ effect has controllable parameters - roomsize, wet and dry. These affect the 'size' and 'space' of the freeverb~ object.</p>
+        <div class="slideImgContainer" id="swapContainer10">
+ 		 		<img src="myImages/reverbSettings.png" width="200" height="500" alt="arduino still"/>
+		
+               <p class="slidePhotoExplain">The roomsize is mapped and scaled (0 - 1) to the value from the flex sensor. It would have been possible to map the wet and dry mix but I figured this would be etter achieved with other sensors.</p>
+ 	</div>
+    </div>
+    
+     <div class="container-fluid">
+	<div class="col-sm-12">
+       <p id="photoPara">“Some people think electronic music is cold, but I think that has more to do with the people listening than the actual music itself.”
+<cite>― Imogen Heap.</cite> </p>
+     </div>
+</div>
+    
+        <div class="col-sm-6">
+        <h2>FM Patch</h2>
+               <p class="photoDesc">The FM synth comprises, mainly, of 2 frequency modulated oscillators and a sawtooth wave generator.</p>
+        <div class="slideImgContainer" id="swapContainer11">
+ 		<img src="myImages/oscillators.png" width="500" height="400" alt="arduino still"/>
+
+               <p class="slidePhotoExplain">The central frequency or carrier of each osc~ is offset, initially, by 1 Hz. This is in order to create a ring modulator affect. The phasor~ adds a sawtooth wave into the system. Each of the oscillators and the phasor~ are sent through a bandpass~ filter which is controlled by the Arduino sensors also.</p>
+ 	</div>
+    </div>
+    
+    
+    <div class="col-sm-6">
+        <h2>GEM Render Window</h2>
+               <p class="photoDesc">A screen shot of the GEM render window. I would have liked to give more time to exploring the possibilities of GEM and this certainly something I will be returning to in the future.</p>
+        <div class="slideImgContainer" id="swapContainer12">
+ 		<img src="myImages/GEM_graphic.png" width="500" height="400" alt="arduino still"/>
+
+               <p class="slidePhotoExplain"> I want to explore the potential of GEM's 3D system and OpenGL capabilities in the future. Unfortunately, time was against me and I had to move on to more pressing deadlines but, i'll be back, soon!</p>
+ 	</div>
+    </div>
+    
+    
+  <div class="container-fluid">
+	<div class="col-sm-12">
+    
+       <p id="photoPara">Having been introduced to visual programming for the first time during the course of this Masters course, I have found a new interest. Yet I feel I have only scratched the surface when it comes to this approach to programming/coding interactive systems. The power of both PD and Max/MSP have really turned me on to visual programming and I can see myself employing both software packages in the future. I will always appreciate the power of Pure Data as a free/open source tool.</p>
+     </div>
+</div>
+
+
+
+<div class="container-fluid panel-footer">
+  <footer class="myFooter" id="myFooterID">
+  	<div class="row">
+      <div class="col-sm-4 footerColumns">
+      <h3 class="footerHeadings">Tools</h3>
+      	<ul class="footerList">
+        	<li><a href="http://www.adobe.com/ie/products/dreamweaver.html" class="footerLinks">Dreamweaver</a></li>
+            <li><a href="http://getbootstrap.com/" class="footerLinks">Bootstrap</a></li>
+            <li><a href="http://galleria.io/" class="footerLinks">Galleria</a></li>
+            <li><a href="http://www.w3schools.com/html/html_responsive.asp" class="footerlinks">Responsive</a></li>
+            <li><a href="https://jquery.com/" class="footerlinks">Jquery</a></li>
+        </ul>
+      </div>
+      <div class="col-sm-4 footerColumns">
+      <h3 class="footerHeadings">Education</h3>
+      	<ul class="footerList">
+        	<li><a href="http://www.lsadgraduates.ie/john-o-dwyer" class="footerLinks">lSAD</a></li>
+            <li><a href="index.html" class="footerLinks">UL</a></li>
+            <li><a href="http://www.lynda.com/" class="footerLinks">LYNDA</a></li>
+            <li><a href="https://helpx.adobe.com/learning.html" class="footerlinks">Adobe</a></li>
+            <li><a href="https://www.google.ie/webhp?hl=en" class="footerlinks">GOOGLE</a></li>
+        </ul>
+      </div>
+      <div class="col-sm-4 footerColumns">
+      <h3 class="footerHeadings">Inspiration</h3>
+      	<ul class="footerList">
+        	<li><a href="#" class="footerLinks">Smashing</a></li>
+            <li><a href="http://www.creativebloq.com/" class="footerLinks">Creative</a></li>
+            <li><a href="https://responsivedesign.is/" class="footerLinks">Responsive</a></li>
+            <li><a href="http://designmodo.com/" class="footerlinks">DesignModo</a></li>
+            <li><a href="http://www.hongkiat.com/blog/" class="footerlinks">Hongkiat</a></li>
+        </ul>
+      </div>
+      <div class="container">
+        <p class="copyrightFooter">copyright <a href="index.html">John O' Dwyer</a> 2015/2016</p>
+      </div>
+    </div>
+</footer>
+</div><!-- end footer content -->
+</div>
+<script src="js/bootstrap.js" type="text/javascript"></script>
+
+</body>
+</html>
